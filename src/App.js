@@ -6,7 +6,7 @@ import NEARLogo from './assets/logo-black.svg'
 import Robot from './assets/robot-idle.gif'
 
 import getConfig from './config'
-const { networkId } = getConfig(process.env.NODE_ENV || 'development')
+const { networkId } = getConfig('development')
 
 export default function App() {
   // use React Hooks to store greeting in component state
